@@ -1,0 +1,56 @@
+# Changelog
+
+## 1.0.0 (2023-09-07)
+
+
+### Features
+
+* add initial impl for List funcs ([739af1c](https://github.com/sandersms/opi-evpn-bridge/commit/739af1c5f3bf69b24c7e55df2ae03f5e65dbaa2f))
+* **bridge:** decouple linux devname from object resource id ([e21063e](https://github.com/sandersms/opi-evpn-bridge/commit/e21063efd3dc083be308e2aa19ac92bdbb4ebdbe))
+* decouple linux devname from object resource id in get and update ([652a65a](https://github.com/sandersms/opi-evpn-bridge/commit/652a65a5d225890438386553b64db6d1b41a0cfc))
+* **list:** add more pagination limits to list funcs ([6b042bb](https://github.com/sandersms/opi-evpn-bridge/commit/6b042bbec349a7ff4b7aecb8d4666c20746cc815))
+* **list:** add pagination to list funcs ([71379e5](https://github.com/sandersms/opi-evpn-bridge/commit/71379e557df1718d439a8677fedbdd7373c54a50))
+* **svi:** call BridgeVlanDel on delete ([0ae986a](https://github.com/sandersms/opi-evpn-bridge/commit/0ae986a187abe98c9e17b97ddd5b16e00396192f))
+* **svi:** decouple linux devname from object resource id ([d90a651](https://github.com/sandersms/opi-evpn-bridge/commit/d90a6514c4a8385c179ff4fd8ba8d07fa8633adb))
+* use optional keyword ([e8c2c86](https://github.com/sandersms/opi-evpn-bridge/commit/e8c2c86890ce67ab7d1cc7568d977250a79b3a9b))
+* **vrf:** delete bridge and vxlan netdevs ([590edeb](https://github.com/sandersms/opi-evpn-bridge/commit/590edebd91d0269cd9c72579ea96f08306d43e25)), closes [#120](https://github.com/sandersms/opi-evpn-bridge/issues/120)
+
+
+### Bug Fixes
+
+* **bridge:** create vxlan only if VNI is not empty ([9a6cf4c](https://github.com/sandersms/opi-evpn-bridge/commit/9a6cf4ca5499705f16cae6f10511a73922ef319e)), closes [#86](https://github.com/sandersms/opi-evpn-bridge/issues/86)
+* **bridge:** delete and get only if VNI is not empty ([b9b3688](https://github.com/sandersms/opi-evpn-bridge/commit/b9b3688287815b4230ec93974b6962b3a644d85c))
+* **bridge:** use cusomer given netdev name via resourceID ([d13fa0a](https://github.com/sandersms/opi-evpn-bridge/commit/d13fa0a034cb02457296f038170a54740b67963c))
+* **bridge:** use VTEP IP instead of hard-coded ([7784b83](https://github.com/sandersms/opi-evpn-bridge/commit/7784b833f8ac42d24731dd6fd23527a532f6129f)), closes [#83](https://github.com/sandersms/opi-evpn-bridge/issues/83)
+* **deps:** update github.com/opiproject/opi-api digest to 1db0f9c ([b9b1784](https://github.com/sandersms/opi-evpn-bridge/commit/b9b17842b9e91ddc210d8f546c4817ca90bd7dba))
+* **deps:** update github.com/opiproject/opi-api digest to 1e58d25 ([915cb25](https://github.com/sandersms/opi-evpn-bridge/commit/915cb25cf04da2bc9333d78529437005a16efcc3))
+* **deps:** update github.com/opiproject/opi-api digest to 432a550 ([e9b998d](https://github.com/sandersms/opi-evpn-bridge/commit/e9b998dc67260f3d1d8b3543390b6c61c9ce81ab))
+* **deps:** update github.com/opiproject/opi-api digest to 48b273e ([d0cfb69](https://github.com/sandersms/opi-evpn-bridge/commit/d0cfb69524337cd7db45d47551d4f0494e817388))
+* **deps:** update github.com/opiproject/opi-api digest to 56e46f7 ([1ff6939](https://github.com/sandersms/opi-evpn-bridge/commit/1ff6939c68fd27cbe698bf07519d464161e2a298))
+* **deps:** update github.com/opiproject/opi-api digest to 5b8771b ([5587da3](https://github.com/sandersms/opi-evpn-bridge/commit/5587da333d9fee88643fc3a758b215523f3b9e80))
+* **deps:** update github.com/opiproject/opi-api digest to 66209d5 ([16cf7fc](https://github.com/sandersms/opi-evpn-bridge/commit/16cf7fc37df1683d4af4c3648ec02982becbd819))
+* **deps:** update github.com/opiproject/opi-api digest to 6d34249 ([7447aeb](https://github.com/sandersms/opi-evpn-bridge/commit/7447aebdf5bf104f17ad747e8cd03f4230eeaf8d))
+* **deps:** update github.com/opiproject/opi-api digest to 9638639 ([4960b15](https://github.com/sandersms/opi-evpn-bridge/commit/4960b15df93e2bc6f2ff83dcd215074cb438b20e))
+* **deps:** update github.com/opiproject/opi-api digest to ab0b6c9 ([87c245f](https://github.com/sandersms/opi-evpn-bridge/commit/87c245f775b0ae9237867f088590bc7729b7437a))
+* **deps:** update github.com/opiproject/opi-api digest to cc0946b ([eea263e](https://github.com/sandersms/opi-evpn-bridge/commit/eea263e955feaa453d2b6570aab90ccf35e064e0))
+* **deps:** update github.com/opiproject/opi-api digest to da1d8ce ([55a89f7](https://github.com/sandersms/opi-evpn-bridge/commit/55a89f7daa99b437be4db9b91f4f041c7be96fa2))
+* **deps:** update github.com/opiproject/opi-api digest to e33accd ([195d786](https://github.com/sandersms/opi-evpn-bridge/commit/195d786a147c86323ec82249345745f110ba7111))
+* **deps:** update github.com/opiproject/opi-api digest to ea8314a ([8cfd3c8](https://github.com/sandersms/opi-evpn-bridge/commit/8cfd3c800e40d9c78961a6edb9133646da25f3c4))
+* **deps:** update github.com/opiproject/opi-api digest to f241fad ([05bd163](https://github.com/sandersms/opi-evpn-bridge/commit/05bd1639f34276540b387de8dbfa2f6befb86b4a))
+* **deps:** update module go.einride.tech/aip to v0.61.0 ([cd27c9b](https://github.com/sandersms/opi-evpn-bridge/commit/cd27c9bbd2dcda23db248ffdeecc7259bdd287cf))
+* **deps:** update module go.einride.tech/aip to v0.62.0 ([a2b7572](https://github.com/sandersms/opi-evpn-bridge/commit/a2b757276f63fb500cfeaf3097c49fd86cad0479))
+* **deps:** update module google.golang.org/grpc to v1.55.0 ([a85acd2](https://github.com/sandersms/opi-evpn-bridge/commit/a85acd2432867189112f72e24e1b7e1299a23d61))
+* **deps:** update module google.golang.org/grpc to v1.56.0 ([cf34775](https://github.com/sandersms/opi-evpn-bridge/commit/cf34775e6680403273b52c96c97af108445eba6d))
+* **deps:** update module google.golang.org/grpc to v1.56.1 ([1dc595e](https://github.com/sandersms/opi-evpn-bridge/commit/1dc595e9f57d340445a626a97d3f2584a6ee9f1d))
+* **deps:** update module google.golang.org/grpc to v1.56.2 ([c78358d](https://github.com/sandersms/opi-evpn-bridge/commit/c78358d21741c01c22d4ca44c754fc1b1d3d3298))
+* **deps:** update module google.golang.org/grpc to v1.57.0 ([423c771](https://github.com/sandersms/opi-evpn-bridge/commit/423c77101edf40b07bf24725f6ad33a304e76b46))
+* **deps:** update module google.golang.org/protobuf to v1.31.0 ([c0a6b0a](https://github.com/sandersms/opi-evpn-bridge/commit/c0a6b0ab3f6d17bc7f8f597267769c97cc11058b))
+* make br-tenant a constant ([e5b6895](https://github.com/sandersms/opi-evpn-bridge/commit/e5b68953bd4642dd5d88187d5fe614333d8acf78)), closes [#100](https://github.com/sandersms/opi-evpn-bridge/issues/100)
+* **port:** raise new error ([76d8099](https://github.com/sandersms/opi-evpn-bridge/commit/76d809924577ef916e9b8ffe0dd11ae8cfb3da4b)), closes [#95](https://github.com/sandersms/opi-evpn-bridge/issues/95)
+* **review:** code review fixes ([9dcaa2d](https://github.com/sandersms/opi-evpn-bridge/commit/9dcaa2dea4c8be131e16630cf95789c7dd637b56))
+* **review:** use correct VRF loop IPs ([66f5aae](https://github.com/sandersms/opi-evpn-bridge/commit/66f5aae53bac569ad4026eff8ca2e77b22957bf0))
+* **variable:** rename old copy paste volume name ([594a3ee](https://github.com/sandersms/opi-evpn-bridge/commit/594a3eed9178728c365c289c20c63e2f55aee055))
+* **vrf:** create bridge and vxlan only if VNI value is not empty ([3a37d72](https://github.com/sandersms/opi-evpn-bridge/commit/3a37d726ac4f48026712a5d1533ab00f91d74d0e)), closes [#105](https://github.com/sandersms/opi-evpn-bridge/issues/105)
+* **vrf:** fill missing mac in status object ([54491ab](https://github.com/sandersms/opi-evpn-bridge/commit/54491ab9236aa2b28406ab1e7adc8bf97f25b8bf))
+* **vrf:** handle empty Vni case ([c020668](https://github.com/sandersms/opi-evpn-bridge/commit/c0206683d62fecf443cadcde140ba2e757f09880))
+* **vrf:** ipprefix len should be 32 ([41a522f](https://github.com/sandersms/opi-evpn-bridge/commit/41a522fae1ff64eb4b7a6607869295f2408e9a5f)), closes [#75](https://github.com/sandersms/opi-evpn-bridge/issues/75)
